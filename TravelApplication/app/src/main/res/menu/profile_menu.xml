@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home"
+        android:title="@string/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item android:id="@+id/nav_SettingLanguage"
+        android:title="@string/nav_SettingLanguage"
+        android:icon="@drawable/ic_baseline_language_24"/>
+
+    <item android:id="@+id/nav_ChangePassword"
+        android:title="@string/nav_ChangePassword"
+        android:icon="@drawable/ic_baseline_key_24"/>
+
+    <item android:id="@+id/nav_AppInfo"
+        android:title="@string/nav_AppInfo"
+        android:icon="@drawable/ic_baseline_info_24"/>
+
+    <item android:id="@+id/nav_Logout"
+        android:title="@string/nav_Logout"
+        android:icon="@drawable/ic_baseline_logout_24"/>
+
+</menu>
