@@ -5,15 +5,17 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import category.Category;
 import category.CategoryAdapter;
+import category.Recyclerview_interface;
 import tour.Tour;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements Recyclerview_interface {
 
     private RecyclerView rcvCategory;
     private CategoryAdapter categoryAdapter;
@@ -31,6 +33,8 @@ public class HomeActivity extends AppCompatActivity {
 
         categoryAdapter.setData(getListCategory());
         rcvCategory.setAdapter(categoryAdapter);
+
+
     }
     private List<Category> getListCategory(){
         List<Category> listCategory = new ArrayList<>();
@@ -57,4 +61,17 @@ public class HomeActivity extends AppCompatActivity {
 
         return listCategory;
     }
+
+    @Override
+    public void onItemClick(int position) {
+
+    }
+
+    public interface ItemClickListener {
+        void onClick(View view, int position,boolean isLongClick);
+    }
+
+
+
+
 }

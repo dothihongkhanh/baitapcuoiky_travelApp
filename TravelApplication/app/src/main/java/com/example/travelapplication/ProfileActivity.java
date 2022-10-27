@@ -55,11 +55,11 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                if(item.getItemId() == R.id.nav_profile){
+                if(item.getItemId() == R.id.action_profile){
                     Intent intent=new Intent(getApplicationContext(),ProfileActivity.class);
                     startActivity(intent);
                 }
-                if(item.getItemId() == R.id.nav_home1){
+                if(item.getItemId() == R.id.action_home1){
                     Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                     startActivity(intent);
 

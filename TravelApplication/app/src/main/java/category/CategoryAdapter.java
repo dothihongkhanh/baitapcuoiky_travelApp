@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.travelapplication.HomeActivity;
 import com.example.travelapplication.R;
 
 import java.util.List;
@@ -65,12 +66,16 @@ public class CategoryAdapter extends  RecyclerView.Adapter<CategoryAdapter.Categ
         private TextView tvNameCategory;
         private RecyclerView rcvTour;
 
+        private HomeActivity.ItemClickListener itemClickListener; // Khai báo interface
+
 
         public CategoryViewHolder(@NonNull View itemView) {
             super(itemView);
 
             tvNameCategory = itemView.findViewById(R.id.textView_nameCategory);
             rcvTour = itemView.findViewById(R.id.recyclerView_tour);
+
+
         }
     }
 }
