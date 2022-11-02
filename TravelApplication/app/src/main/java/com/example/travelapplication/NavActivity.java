@@ -29,7 +29,7 @@ public class NavActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
         //getSupportFragmentManager().beginTransaction().replace(R.id.body_container,new HomeFragment()).commit();
-        bottomNavigationView.setSelectedItemId(R.id.action_home1);
+        bottomNavigationView.setSelectedItemId(R.id.nav_home1);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

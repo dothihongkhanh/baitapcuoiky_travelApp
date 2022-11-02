@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.List;
+
 
 public class DestinationAdapter  extends BaseAdapter {
 
@@ -52,7 +52,9 @@ public class DestinationAdapter  extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             view = inflater.inflate(layout ,null);
+            holder = new ViewHolder();
             // ánh xạ view
+            //anh xa
             holder = new ViewHolder();
             holder.txtName = (TextView) view.findViewById(R.id.textviewName);
             holder.txtNameProvince = (TextView) view.findViewById(R.id.textviewNameProvince);

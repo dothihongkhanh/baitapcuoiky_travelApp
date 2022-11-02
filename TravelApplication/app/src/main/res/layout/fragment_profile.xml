@@ -63,8 +63,8 @@
             android:layout_toEndOf="@+id/imageCard"
             android:fontFamily="sans-serif-light"
             android:text="Đỗ Thị Hồng Khánh"
-            android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textColor="@color/purple_700"
+            android:textSize="22dp"
             android:textStyle="bold"
             app:layout_constraintLeft_toRightOf="@+id/imageCard"
             app:layout_constraintTop_toTopOf="parent" />
@@ -97,7 +97,6 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/textViewName"
                     android:text="Do Thi Hong Khanh"
-                    android:fontFamily="sans-serif-light"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textSize="18sp"
@@ -134,7 +133,6 @@
                     android:text="0123456789"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:fontFamily="sans-serif-light"
                     android:textSize="18sp"
                     android:textColor="@color/black"/>
             </LinearLayout>
@@ -170,7 +168,6 @@
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textSize="18sp"
-                    android:fontFamily="sans-serif-light"
                     android:textColor="@color/black"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

@@ -16,7 +16,6 @@ public class SignUpActivity extends AppCompatActivity {
     EditText edtxtEmail;
     EditText edtxtPhone;
     Button btnBackSU;
-    Button btnSignUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,14 +31,6 @@ public class SignUpActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
-
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent=new Intent(SignUpActivity.this, MainActivity.class);
-                startActivity(myIntent);
-            }
-        });
     }
 
     public void AnhXa(){
@@ -48,7 +39,6 @@ public class SignUpActivity extends AppCompatActivity {
         edtxtEmail=(EditText) findViewById(R.id.editTextEmail);
         edtxtPhone=(EditText) findViewById(R.id.editTextSDT);
         btnBackSU=(Button)  findViewById(R.id.buttonBackSU);
-        btnSignUp = (Button) findViewById(R.id.ButtonSignUp);
     }
     public void hideUnderBarInEditText(EditText editText){
         editText.setBackgroundResource(android.R.color.transparent);

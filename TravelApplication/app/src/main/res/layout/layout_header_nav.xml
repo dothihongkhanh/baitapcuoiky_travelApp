@@ -10,20 +10,18 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/avata" />
+        android:src="@drawable/avata"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ĐỖ THỊ HỒNG KHÁNH"
         android:textSize="18sp"
-        android:fontFamily="sans-serif-light"
         android:layout_marginTop="5dp"
         android:textColor="@color/purple_700"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2050531200212"
-        android:fontFamily="sans-serif-light"
         android:textSize="15sp"
         android:textColor="@color/purple_700"/>
 

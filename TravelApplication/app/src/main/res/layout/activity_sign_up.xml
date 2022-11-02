@@ -72,19 +72,15 @@
                     android:layout_gravity="center_horizontal"
                     app:startIconDrawable="@drawable/ic_baseline_lock_24"
                     android:background="@drawable/boder_edittext"
-                    android:hint="Password"
-                    app:boxStrokeWidth="0dp"
-                    app:boxStrokeWidthFocused="0dp"
-                    app:hintEnabled="false">
+                    android:hint="Password">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/editTextPassSU"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
                         android:background="#00000000"
-                        android:hint="Password"
                         android:inputType="textPassword"
-                        android:paddingLeft="10dp"/>
+                        android:paddingLeft="10dp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <EditText
@@ -127,7 +123,6 @@
                     android:textSize="20sp"
                     android:textColor="@color/purple_700"
                     android:textStyle="bold"
-                    android:id="@+id/ButtonSignUp"
                     />
 
             </LinearLayout>

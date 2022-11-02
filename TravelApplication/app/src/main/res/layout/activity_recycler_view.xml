@@ -4,32 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <TextView
-        android:id="@+id/textViewDanhSach"
+    tools:context=".RecyclerViewActivity">
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Danh sách tour du lịch"
-        android:textSize="22sp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="20dp"
-        android:textStyle="italic"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/purple_700"/>
+        android:src="@drawable/add_tour"
+        android:background="@null"
+        android:id="@+id/button_add"
+        />
 
-    <ListView
-        android:id="@+id/listviewDestination"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:layout_above="@+id/bottom_nav"
-        android:layout_below="@id/textViewDanhSach"/>
-
+        android:layout_below="@id/button_add"/>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="2dp"
-        app:menu="@menu/bottom_menu" />
+        app:menu="@menu/bottom_menu"
+        />
 
 </RelativeLayout>

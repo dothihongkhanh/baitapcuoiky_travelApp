@@ -72,10 +72,7 @@
                     app:passwordToggleEnabled="true"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/boder_edittext"
-                    app:startIconDrawable="@drawable/ic_baseline_lock_24"
-                    app:boxStrokeWidth="0dp"
-                    app:boxStrokeWidthFocused="0dp"
-                    app:hintEnabled="false">
+                    app:startIconDrawable="@drawable/ic_baseline_lock_24">
                     <EditText
                         android:id="@+id/editTextPass"
                         android:layout_width="match_parent"

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "529377067037",
+    "firebase_url": "https://travelapphongkhanh-default-rtdb.firebaseio.com",
+    "project_id": "travelapphongkhanh",
+    "storage_bucket": "travelapphongkhanh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529377067037:android:1fd4128932db61f91946f4",
+        "android_client_info": {
+          "package_name": "com.example.travelapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529377067037-eaf3gti0l0s2via2iseat0tm19j3l2u5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRXESHHsF4yTulupm59CRMnBbxVjFZqBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529377067037-eaf3gti0l0s2via2iseat0tm19j3l2u5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
