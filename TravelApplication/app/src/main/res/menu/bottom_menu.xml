@@ -9,5 +9,5 @@
         android:icon="@drawable/user"/>
     <item android:id="@+id/nav_notice"
         android:title="@string/action_notice"
-        android:icon="@drawable/bell"/>
+        android:icon="@drawable/clipboard"/>
 </menu>

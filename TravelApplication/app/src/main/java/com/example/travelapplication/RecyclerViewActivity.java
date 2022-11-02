@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -16,6 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class RecyclerViewActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     BottomNavigationView bottomNavigationView ;
+    ImageButton ibAdd;
 
     MainAdapter mainAdapter;
     @Override
@@ -34,16 +37,27 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
         mainAdapter=new MainAdapter(options);
         recyclerView.setAdapter(mainAdapter);
+
+        ibAdd=(ImageButton) findViewById(R.id.button_add);
+        ibAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),AddTourActivity.class));
+            }
+        });
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
                 if(item.getItemId() == R.id.nav_profile){
                     Intent intent=new Intent(getApplicationContext(),ProfileActivity.class);
                     startActivity(intent);
                 }
                 if(item.getItemId() == R.id.nav_home1){
                     Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                    startActivity(intent);
+                }
+                if(item.getItemId() == R.id.nav_notice){
+                    Intent intent=new Intent(getApplicationContext(),RecyclerViewActivity.class);
                     startActivity(intent);
                 }
                 return true;

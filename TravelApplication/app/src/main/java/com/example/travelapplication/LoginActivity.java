@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent=new Intent(LoginActivity.this, RecyclerViewActivity.class);
+                Intent myIntent=new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(myIntent);
             }
         });

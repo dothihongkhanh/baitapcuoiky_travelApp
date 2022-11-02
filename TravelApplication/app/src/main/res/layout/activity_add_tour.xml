@@ -12,6 +12,7 @@
         android:gravity="center"
         android:textColor="#FFF"
         />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +27,6 @@
         android:layout_height="35dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@color/purple_200"
         android:gravity="center"
         android:id="@+id/editT_name_add"/>
 
@@ -44,7 +44,6 @@
         android:layout_height="35dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@color/purple_200"
         android:gravity="center"
         android:id="@+id/editT_tenTinh_add"/>
     <TextView
@@ -61,7 +60,6 @@
         android:layout_height="35dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@color/purple_200"
         android:gravity="center"
         android:id="@+id/editT_gia_add"/>
     <TextView
@@ -78,7 +76,6 @@
         android:layout_height="35dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@color/purple_200"
         android:gravity="center"
         android:id="@+id/editT_anh_add"/>
     <Button

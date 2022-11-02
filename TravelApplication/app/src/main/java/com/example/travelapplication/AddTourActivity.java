@@ -62,7 +62,7 @@ public class AddTourActivity extends AppCompatActivity {
         map.put("price", ed_giaAdd.getText().toString());
         map.put("picture", ed_AnhAdd.getText().toString());
 
-        FirebaseDatabase.getInstance().getReference().child("Tour").push()
+        FirebaseDatabase.getInstance().getReference().child("tour").push()
                 .setValue(map)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

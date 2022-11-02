@@ -54,29 +54,19 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
                 if(item.getItemId() == R.id.nav_profile){
                     Intent intent=new Intent(getApplicationContext(),ProfileActivity.class);
                     startActivity(intent);
                 }
                 if(item.getItemId() == R.id.nav_home1){
-                    Intent intent=new Intent(getApplicationContext(),RecyclerViewActivity.class);
-                    startActivity(intent);
-
-                }
-
-
-                return true;
-                /*int id= item.getItemId();
-                if(id==R.id.nav_home1){
                     Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                     startActivity(intent);
-                }else if(id==R.id.nav_profile){
-                    Intent intent=new Intent(getApplicationContext(),ProfileActivity.class);
+                }
+                if(item.getItemId() == R.id.nav_notice){
+                    Intent intent=new Intent(getApplicationContext(),RecyclerViewActivity.class);
                     startActivity(intent);
-                }*/
-                //dong drawer lai
-                //return true;
+                }
+                return true;
             }
         });
     }

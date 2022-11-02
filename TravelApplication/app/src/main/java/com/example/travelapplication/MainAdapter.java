@@ -59,7 +59,7 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
                 .error(com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark_normal)
                 .into(holder.img);
 
-        holder.btnUpdate.setOnClickListener(new View.OnClickListener() {
+        holder.btnEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final DialogPlus dialogPlus= DialogPlus.newDialog(holder.img.getContext())
@@ -72,14 +72,14 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
                 EditText name = view.findViewById(R.id.editT_name_ud);
                 EditText tenTinh = view.findViewById(R.id.editT_tentinh_ud);
                 EditText gia = view.findViewById(R.id.editT_gia_ud);
-                EditText hinh = view.findViewById(R.id.editT_anh_ud);
+                EditText anh = view.findViewById(R.id.editT_anh_ud);
 
-                Button btnUpdate = view.findViewById(R.id.button_update);
+                Button btnUpdate = view.findViewById(R.id.button_Update);
 
                 name.setText(model.getName());
                 tenTinh.setText(model.getNameProvince());
                 gia.setText(model.getPrice());
-                hinh.setText(model.getPicture());
+                anh.setText(model.getPicture());
                 dialogPlus.show();
                 btnUpdate.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -88,8 +88,8 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
                         map.put("name",name.getText().toString());
                         map.put("nameProvince",tenTinh.getText().toString());
                         map.put("price",gia.getText().toString());
-                        map.put("picture",hinh.getText().toString());
-                        FirebaseDatabase.getInstance().getReference().child("Tour")
+                        map.put("picture",anh.getText().toString());
+                        FirebaseDatabase.getInstance().getReference().child("tour")
                                 .child(getRef(position).getKey()).updateChildren(map)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -117,7 +117,7 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
                         builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                FirebaseDatabase.getInstance().getReference().child("Books")
+                                FirebaseDatabase.getInstance().getReference().child("tour")
                                         .child(getRef(position).getKey()).removeValue();
                             }
                         });
@@ -146,7 +146,7 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
     class myViewHolder extends RecyclerView.ViewHolder{
         CircleImageView img;
         TextView txtName,txtNameProvince, txtPrice ;
-        ImageButton btnUpdate,btnDelete;
+        ImageButton btnEdit,btnDelete;
 
         public  myViewHolder(@NonNull View itemView){
             super(itemView);
@@ -155,7 +155,7 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
             txtName = (TextView)  itemView.findViewById(R.id.textView_tenTour);
             txtNameProvince = (TextView)  itemView.findViewById(R.id.textView_tenTinh);
             txtPrice = (TextView)  itemView.findViewById(R.id.textView_gia);
-            btnUpdate=(ImageButton) itemView.findViewById(R.id.button_update);
+            btnEdit=(ImageButton) itemView.findViewById(R.id.button_edit);
             btnDelete=(ImageButton) itemView.findViewById(R.id.button_delete);
         }
     }

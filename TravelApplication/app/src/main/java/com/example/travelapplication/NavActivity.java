@@ -14,8 +14,6 @@ import android.view.WindowManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import fragment.HomeFragment;
-import fragment.ProfileFragment;
 
 public class NavActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView ;
