@@ -31,6 +31,7 @@ public class SignUpActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
+
     }
 
     public void AnhXa(){

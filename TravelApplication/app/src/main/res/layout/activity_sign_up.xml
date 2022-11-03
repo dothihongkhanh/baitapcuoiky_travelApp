@@ -70,15 +70,18 @@
                     android:layout_height="50dp"
                     app:passwordToggleEnabled="true"
                     android:layout_gravity="center_horizontal"
-                    app:startIconDrawable="@drawable/ic_baseline_lock_24"
                     android:background="@drawable/boder_edittext"
-                    android:hint="Password">
-                    <com.google.android.material.textfield.TextInputEditText
+                    app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintEnabled="false">
+                    <EditText
                         android:id="@+id/editTextPassSU"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
                         android:background="#00000000"
+                        android:hint="Password"
                         android:inputType="textPassword"
                         android:paddingLeft="10dp" />
                 </com.google.android.material.textfield.TextInputLayout>
