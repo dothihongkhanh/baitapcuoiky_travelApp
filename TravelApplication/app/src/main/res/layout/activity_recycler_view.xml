@@ -19,7 +19,7 @@
         android:id="@+id/liner">
 
         <TextView
-            android:layout_width="330dp"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Danh sách tour"
@@ -51,7 +51,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="2dp"
         app:menu="@menu/bottom_menu"
         />
 

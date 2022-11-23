@@ -51,20 +51,22 @@
                     android:textColor="@color/purple_700"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"/>
+
                 <EditText
                     android:id="@+id/editTextUserNameSU"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
-                    android:hint="Username"
+                    android:layout_gravity="center"
+                    android:layout_margin="18dp"
+                    android:background="@drawable/boder_edittext"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
                     android:drawablePadding="8dp"
+                    android:hint="Username"
+                    android:paddingLeft="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="60dp"
-                    android:layout_gravity="center"
-                    android:paddingLeft="10dp"
-                    android:background="@drawable/boder_edittext"
-                    android:layout_margin="18dp"
-                    android:drawableLeft="@drawable/ic_baseline_person_24"/>
+                    tools:layout_editor_absoluteY="60dp" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="300dp"
                     android:layout_height="50dp"
@@ -116,6 +118,7 @@
                     android:inputType="number"
                     android:drawablePadding="8dp"/>
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonSignUp"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:text="signup"

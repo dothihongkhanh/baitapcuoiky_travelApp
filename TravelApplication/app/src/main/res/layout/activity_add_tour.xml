@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/mixcolor">
+    android:background="@drawable/biennn">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -14,81 +15,71 @@
         android:textColor="#FFF"
         />
 
-    <TextView
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editT_name_add1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tên tour"
-        android:textSize="25sp"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:gravity="center"
-        android:textColorHighlight="#7cff88"
-        android:id="@+id/editT_name_add"/>
-
-    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Tên tour"
+        android:textColorHint="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editT_name_add"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxStrokeColor="@color/white"
+        android:id="@+id/editT_tenTinh_add1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center"
-        android:text="Tên tỉnh"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:gravity="center"
-        android:textColorHighlight="#7cff88"
-        android:id="@+id/editT_tenTinh_add"/>
-    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Tên tỉnh"
+        android:textColorHint="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editT_tenTinh_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editT_gia_add1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center"
-        android:text="Giá"
-        android:textSize="25sp"
-        android:textColor="@color/black"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:gravity="center"
-        android:textColorHighlight="#7cff88"
-        android:id="@+id/editT_gia_add"/>
-    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColorHint="@color/black"
+        android:hint="Giá">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editT_gia_add"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/black"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editT_anh_add1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hình ảnh"
-        android:textSize="25sp"
-        android:gravity="center"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:textColor="@color/black"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:gravity="center"
-        android:textColorHighlight="#7cff88"
-        android:id="@+id/editT_anh_add"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColorHint="@color/black"
+        android:hint="Hình ảnh">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editT_anh_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="100dp"
         android:layout_height="wrap_content"

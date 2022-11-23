@@ -86,17 +86,28 @@
                         android:inputType="textPassword"
                         android:paddingLeft="10dp" />
                 </com.google.android.material.textfield.TextInputLayout>
-                <TextView
-                    android:id="@+id/textViewForgot"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="10dp"
-                    android:text="Forgot password?"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:layout_marginRight="30dp"/>
+                    android:orientation="horizontal"
+                    android:paddingLeft="30dp">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Luu mat khau"
+                        android:id="@+id/checkboxLuuMK"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/textViewForgot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot password?"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"/>
+                </LinearLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/buttonLogin"

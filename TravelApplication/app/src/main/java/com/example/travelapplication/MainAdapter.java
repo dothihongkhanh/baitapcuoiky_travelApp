@@ -54,9 +54,9 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
 
         Glide.with(holder.img.getContext())
                 .load(model.getPicture())
-                .placeholder(com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark)
+                .placeholder(R.drawable.caurong)
                 .circleCrop()
-                .error(com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark_normal)
+                .error(R.drawable.caurong)
                 .into(holder.img);
 
         holder.btnEdit.setOnClickListener(new View.OnClickListener() {
@@ -107,30 +107,30 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
                                 });
                     }
                 });
-                holder.btnDelete.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        AlertDialog.Builder builder = new AlertDialog.Builder(holder.txtName.getContext());
-                        builder.setTitle("Are you sure?");
-                        builder.setMessage("Delete data can't be Undo");
 
-                        builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                FirebaseDatabase.getInstance().getReference().child("tour")
-                                        .child(getRef(position).getKey()).removeValue();
-                            }
-                        });
-                        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                Toast.makeText(holder.txtName.getContext(), "Cancelled", Toast.LENGTH_SHORT).show();
-                            }
-                        });
-                        builder.show();
+            }
+        });
+        holder.btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(holder.txtName.getContext());
+                builder.setTitle("Are you sure?");
+                builder.setMessage("Delete data can't be Undo");
+
+                builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        FirebaseDatabase.getInstance().getReference().child("tour")
+                                .child(getRef(position).getKey()).removeValue();
                     }
                 });
-
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(holder.txtName.getContext(), "Cancelled", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.show();
             }
         });
 
